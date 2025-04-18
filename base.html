@@ -34,11 +34,12 @@
                 cantidad = document.querySelector('.cantidad');
                 total = document.querySelector('.valor-total');
                 cantidad.innerHTML = parseInt(cantidad.innerHTML) - 1;
+
                 if (parseInt(cantidad.innerHTML) < 0) {
                     cantidad.innerHTML = 0;
                 }
 
-
+                total.innerHTML = parseInt(cantidad.innerHTML) * precio;
 
                 ">-</button>
 
